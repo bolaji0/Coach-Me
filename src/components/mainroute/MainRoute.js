@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Navigation from '../navigation/navigation'
-import Home from '../routes/Home/home.styles'
+import Home from '../routes/Home/home.routes'
 import About from '../routes/About/about.routes'
 import Patners from '../routes/patners/patners.routes'
 import Faqs from '../routes/Faqs/faq.routes'

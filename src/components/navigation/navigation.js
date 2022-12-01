@@ -43,7 +43,7 @@ const Navigation = () => {
        </LinkContainer>
     <HamBurgerContainer onClick={handleClick}>
         {
-            toggleNavbar ? <AiOutlineClose /> : <AiOutlineBars />
+            toggleNavbar ? <AiOutlineClose size={'1.5rem'} /> : <AiOutlineBars size={'1.5rem'} />
          }
     </HamBurgerContainer>
     </Wrapper>
