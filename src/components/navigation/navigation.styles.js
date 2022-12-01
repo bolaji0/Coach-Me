@@ -74,6 +74,7 @@ padding: 20px;
    position: relative;
    top: ${({open}) => open ? '0px' : '-1000px'};
    transition: all ease-out .5s;
+   z-index: 999;
 }
 `
 
