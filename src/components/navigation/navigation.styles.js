@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
 width: 100%;
-background-color: ${({theme}) => theme.bg};
+background-color: ${({theme}) => theme.text};
 height: 90px;
 display: flex;
 align-items: center;
@@ -61,7 +61,7 @@ align-items: center;
 justify-content: space-between;
 /* background-color: black; */
 padding: 20px;
-
+/* background-color: ${({theme}) => theme.text}; */
 @media screen and (max-width:960px){
    height: 100vh;
    width: 100%;
@@ -70,10 +70,11 @@ padding: 20px;
    justify-content: center;
    flex-direction: column;
    margin-top: 380px;
-   background-color: ${({theme}) => theme.bg};
+   background-color: ${({theme}) => theme.text};
    position: relative;
    top: ${({open}) => open ? '0px' : '-1000px'};
    transition: all ease-out .5s;
+   z-index: 999;
 }
 `
 

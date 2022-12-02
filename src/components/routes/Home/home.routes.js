@@ -16,22 +16,24 @@ const Home = () => {
         Bridge the gap between tutors and students
       </h1>
         </div>
-        <div className='holder'>
+        <div className='holder' data-aos="fade-up">
             <p>
                 helps you connect to tutors around the world, match you with 
                 the best based on your personal desires and public reviews.
             </p>
         </div>
-        <ButtonContainer>
+        <ButtonContainer data-aos="fade-up">
              <NavLink to={'/create-account'}>
                 Get Started
              </NavLink>
             </ButtonContainer>
     </Container>
+
     <Container1>
      <img src={map} alt='map'/>
     </Container1>
     </Main>
+    
      <Main1>
         <Container2>
         <div className='text-holder' data-aos="fade-up">
@@ -45,7 +47,7 @@ const Home = () => {
                 the best based on your personal desires and public reviews.
             </p>
         </div>
-        <ButtonContainer>
+        <ButtonContainer data-aos="fade-up">
              <NavLink to={'/create-account'}>
                 Get Started
              </NavLink>

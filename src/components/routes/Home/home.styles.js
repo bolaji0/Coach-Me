@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export const Wrapper = styled.div`
 width: 100%;
 height: auto;
-background-color: ${({theme}) => theme.bg};
+background-color: ${({theme}) => theme.text};
 display: flex;
 flex-direction: column;
 padding: 20px;
@@ -13,23 +13,39 @@ padding: 20px;
 export const Main = styled.div`
 width: 100%;
 height: auto;
-background-color: ${({theme}) => theme.bg};
+background-color: ${({theme}) => theme.text};
 display: flex;
+@media screen and (max-width: 960px) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 `
 
 export const Main1 = styled.div`
 width: 100%;
 height: auto;
-background-color: ${({theme}) => theme.bg};
+background-color: ${({theme}) => theme.text};
 display: flex;
+
+@media screen and (max-width:  960px) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 `
+
 
 export const Container = styled.div`
 width: 50%;
 height: 500px;
 /* background-color: green; */
 display: flex;
-justify-content: space-between;
+/* justify-content: space-between; */
 flex-direction: column;
 align-items: center;
 
@@ -55,8 +71,36 @@ color: ${({theme}) => theme.primary};
 .holder p {
 color: ${({theme}) => theme.primary1};
 text-align: center;
+letter-spacing: 2px;
 }
 
+@media screen and (max-width: 960px) {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  .text-holder {
+  max-width: 500px;
+  /* width: 100%; */
+}
+
+.text-holder h1 {
+  text-align: center;
+font-family: 'Roboto', sans-serif;
+}
+
+.holder {
+  width: 300px;
+}
+
+.holder p {
+color: ${({theme}) => theme.primary1};
+text-align: center;
+letter-spacing: 2px;
+}
+
+}
 `
 
 export const Container1 = styled.div`
@@ -69,6 +113,11 @@ img {
   height: 100%;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 960px) {
+width: 100%;
+margin: 10px;
+}
 `
 
 export const Container2 = styled.div`
@@ -80,6 +129,7 @@ display: flex;
 justify-content: space-between;
 flex-direction: column;
 align-items: center;
+background-color: ${({theme}) => theme.text};
 
 .text-holder h1 {
   text-align: start;
@@ -95,6 +145,34 @@ color: ${({theme}) => theme.primary};
 color: ${({theme}) => theme.primary1};
 text-align: start;
 }
+
+@media screen and (max-width: 960px){
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+
+  .text-holder h1 {
+  text-align: start;
+font-family: 'Roboto', sans-serif;
+color: ${({theme}) => theme.primary};
+margin-top: 20px;
+}
+.holder {
+  width: 100%;
+}
+.holder p {
+color: ${({theme}) => theme.primary1};
+text-align: start;
+margin-top: 50px;
+margin-bottom: 20px;
+}
+
+}
+
 `
 export const Container3 = styled.div`
 width: 50%;
@@ -104,7 +182,7 @@ overflow: hidden;
 display: flex;
 align-items: center;
 justify-content: center;
-
+background-color: ${({theme}) => theme.text};
 .course-holder {
   width: 70%;
   /* border: 1px solid red; */
@@ -127,13 +205,43 @@ justify-content: center;
   margin: 10px;
   background-color: ${({theme}) => theme.primary1};
 }
+  @media screen and (max-width: 960px){
+    width: 100%;
+   height: 500px;
+   padding: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+    .course-holder {
+  width: 100%;
+  /* border: 1px solid red; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+    .course-holder div {
+  height: 45px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 10px;
+  background-color: ${({theme}) => theme.primary1};
+  }
+}
 
 `
 
 
 export const ButtonContainer = styled.div`
 border: 1px solid ${({theme}) => theme.primary};
-margin: 10px;
+margin: 30px auto;
 width: 150px;
 height: 50px;
 display: flex;
@@ -150,6 +258,8 @@ transition: all ease-out .26s;
 @media screen and (max-width: 960px){
     width: 100%;
     border: 1px solid ${({theme}) => theme.primary1};
+   font-size: 10px;
+   display: flex;
 }
 `
 
@@ -178,5 +288,7 @@ color: ${({theme}) => theme.primary};
 }
 @media screen and (max-width: 960px) {
     padding: 30px;
+    font-size: 10px;
+    text-align: center;
 }
 `
