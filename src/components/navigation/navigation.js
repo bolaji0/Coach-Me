@@ -14,6 +14,7 @@ const Navigation = () => {
             setToggleNavbar(true)
     }
     }
+  
 
   return (
     <>
@@ -26,7 +27,7 @@ const Navigation = () => {
        <LinkContainer open={toggleNavbar}>
        {
          LinksArray.map(({id,to,name}) =>(
-            <NavLink to={to} key={id}>
+            <NavLink to={to} key={id} onClick={handleClick}>
                 {name}
             </NavLink>
          ))

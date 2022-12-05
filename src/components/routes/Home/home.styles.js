@@ -292,3 +292,114 @@ color: ${({theme}) => theme.primary};
     text-align: center;
 }
 `
+
+
+export const Main3 = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: space-between; */
+height: 500px;
+width: 100%;
+background-color: ${({theme}) => theme.text};
+@media screen and (max-width: 960px){
+  width: 100%;
+  height: auto;
+}
+`
+
+export const Container4 = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+ 
+ h1 {
+  text-align: center;
+  font-family: inherit;
+  padding: 20px;
+  color: ${({theme}) => theme.primary1};
+ }
+ @media screen and (max-width: 960px){
+  width: 100%;
+  h1 {
+  text-align: center;
+  font-family: inherit;
+  padding: 16px;
+  color: ${({theme}) => theme.primary1};
+ }
+}
+`
+
+
+export const Container5 = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 500px;
+
+.box {
+  height: 300px;
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  &:hover {
+  border: 1px solid ${({theme}) => theme.primary1};
+  transition: all ease-out .26s;
+  transform: scale(1.1);
+  }
+}
+
+.box h2 {
+  font-size: 25px;
+font-family: 'Roboto', sans-serif;
+color: ${({theme}) => theme.primary};
+text-align: center;
+}
+
+.box p {
+  text-align: start;
+  padding: 10px;
+color: ${({theme}) => theme.primary};
+}
+
+@media screen and (max-width: 960px) {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .box {
+  border: 1px solid ${({theme}) => theme.primary1};
+  height: 300px;
+  width: 70%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.box h2 {
+  font-size: 20px;
+font-family: 'Roboto', sans-serif;
+color: ${({theme}) => theme.primary};
+text-align: center;
+}
+
+.box p {
+  text-align: start;
+  padding: 15px;
+  font-size: 10px;
+font-family: 'Roboto', sans-serif;
+color: ${({theme}) => theme.primary};
+}
+}
+
+`

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { ButtonContainer, Container, Container1, Container2, Container3, Main, Main1, NavLink, Wrapper } from './home.styles'
+import { ButtonContainer, Container, Container1, Container2, Container3, Container4, Container5, Main, Main1, Main3, NavLink, Wrapper } from './home.styles'
 import map from '../../../assests/images/map1.jpg'
 const Home = () => {
     useEffect(() =>{
@@ -63,8 +63,48 @@ const Home = () => {
         </Container3>
      </Main1>
 
+       <Main3>
+        <Container4>
+          <h1 data-aos="fade-up">Solutions</h1>
+        </Container4>
+        <Container5>
+     <div className='box' data-aos="fade-right">
+        <h2>To tutors</h2>
+        <p>
+       serve as a means to make revenue for tutors who are
+       in need of jobs,make quick cash by getting students
+        who are interested in their services.
+        </p>
+        <NavLink to={'/about-us'}>
+                learn more
+             </NavLink>
+     </div>
+     <div className='box' data-aos="fade-left">
+     <h2>To tutors</h2>
+        <p>
+       serve as a means to make revenue for tutors who are
+       in need of jobs,make quick cash by getting students
+        who are interested in their services.
+        </p>
+        <NavLink to={'/about-us'}>
+                learn more
+             </NavLink>
+    </div>
+    <div className='box' data-aos="fade-right">
+    <h2>To tutors</h2>
+        <p>
+       serve as a means to make revenue for tutors who are
+       in need of jobs,make quick cash by getting students
+        who are interested in their services.
+        </p>
+        <NavLink to={'/about-us'}>
+                learn more
+             </NavLink>
+     </div>
+        </Container5>
+       </Main3>
    </Wrapper>
   )
 }
 
-export default Home
+export default Home;
