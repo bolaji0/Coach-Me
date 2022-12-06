@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { ButtonContainer, Container, Container1, Container2, Container3, Container4, Container5, Main, Main1, Main3, NavLink, Wrapper } from './home.styles'
+import { ButtonContainer, Container, Container1, Container2, Container3, Container4, Container5, Footer, Main, Main1, Main3, NavLink, Wrapper,ImageCon } from './home.styles'
 import map from '../../../assests/images/map1.jpg'
+import logo from '../../../assests/images/CoachMe logo.png'
+import { AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
+// import { ImageCon } from '../../navigation/navigation.styles'
+
 const Home = () => {
     useEffect(() =>{
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     },[])
   return (
    <Wrapper>
@@ -68,7 +73,7 @@ const Home = () => {
           <h1 data-aos="fade-up">Solutions</h1>
         </Container4>
         <Container5>
-     <div className='box' data-aos="fade-right">
+     <div className='box' data-aos="fade-up">
         <h2>To tutors</h2>
         <p>
        serve as a means to make revenue for tutors who are
@@ -79,8 +84,8 @@ const Home = () => {
                 learn more
              </NavLink>
      </div>
-     <div className='box' data-aos="fade-left">
-     <h2>To tutors</h2>
+     <div className='box' data-aos="fade-up">
+     <h2>To students</h2>
         <p>
        serve as a means to make revenue for tutors who are
        in need of jobs,make quick cash by getting students
@@ -90,8 +95,8 @@ const Home = () => {
                 learn more
              </NavLink>
     </div>
-    <div className='box' data-aos="fade-right">
-    <h2>To tutors</h2>
+    <div className='box' data-aos="fade-up">
+    <h2>To patners</h2>
         <p>
        serve as a means to make revenue for tutors who are
        in need of jobs,make quick cash by getting students
@@ -103,6 +108,38 @@ const Home = () => {
      </div>
         </Container5>
        </Main3>
+       <Footer>
+         <div className='container'>
+         <ImageCon>
+          <Link to={'/'}>
+             <img src={logo} alt=''/>
+          </Link>
+        </ImageCon>
+    <div className='link-container'>
+      <h3>Quick Links</h3>
+     <div>
+     <Link>
+       About us
+       </Link>
+       <Link>
+       Partners
+       </Link>
+       <Link>
+       Faqs
+       </Link>
+       <Link>
+       Pricing
+       </Link>
+     </div>
+    </div>
+          <div className='icon-container'>
+            <h3>Socials</h3>
+              <AiFillFacebook size={'2rem'} color={'rgb(92, 134, 209)'}/>
+              <AiOutlineTwitter size={'2rem'} color={'rgb(92, 134, 209)'}/>
+              <AiFillInstagram size={'2rem'} color={'rgb(92, 134, 209)'}/>
+          </div>
+         </div>
+       </Footer>
    </Wrapper>
   )
 }

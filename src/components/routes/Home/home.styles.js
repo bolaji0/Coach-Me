@@ -401,5 +401,68 @@ font-family: 'Roboto', sans-serif;
 color: ${({theme}) => theme.primary};
 }
 }
+`
+export const Footer = styled.div`
+/* © Copyright 2022 affilBase. All rights reserved. */
+height: 100px;
+width: 100%;
+background-color: ${({theme}) => theme.text};
+  
+  .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .link-container {
+      display: flex;
+      padding: 20px;
+      height: 50px;
+      width: 40%;
+      flex-direction: column;
+      div {
+        width: 100%;
+        height: 50%;
+      }
+     div a {
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+      color: ${({theme}) => theme.primary};
+        
+      }
+      h3 {
+      color: ${({theme}) => theme.primary1};
+       font-family: inherit;
+       text-align: center;
+      }
+
+     
+    }
+
+    
+    .icon-container {
+        h3 {
+      color: ${({theme}) => theme.primary1};
+       font-family: inherit;
+       text-align: center;
+      }
+      }
+  }
 
 `
+
+export const ImageCon = styled.div`
+height: 40px;
+width: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+img {
+    width: 100%;
+    height: 100%;
+}
+`;
