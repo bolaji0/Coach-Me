@@ -118,16 +118,16 @@ const Home = () => {
     <div className='link-container'>
       <h3>Quick Links</h3>
      <div>
-     <Link>
+       <Link to={'/about-us'}>
        About us
        </Link>
-       <Link>
+       <Link to={'/partners'}>
        Partners
        </Link>
-       <Link>
+       <Link to={'/faqs'}>
        Faqs
        </Link>
-       <Link>
+       <Link to={'pricing'}>
        Pricing
        </Link>
      </div>

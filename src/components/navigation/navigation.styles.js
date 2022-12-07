@@ -72,7 +72,7 @@ padding: 20px;
    margin-top: 380px;
    background-color: ${({theme}) => theme.text};
    position: relative;
-   top: ${({open}) => open ? '0px' : '-1000px'};
+   left: ${({open}) => open ? '0px' : '-1000px'};
    transition: all ease-out .5s;
    z-index: 999;
 }
@@ -115,6 +115,3 @@ export const HamBurgerContainer = styled.div`
 }
 
 `
-
-
-
