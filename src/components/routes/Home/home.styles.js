@@ -452,6 +452,38 @@ background-color: ${({theme}) => theme.text};
       }
   }
 
+  @media screen and (max-width: 960px) {
+    height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ .container {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ .link-container {
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: -10px;
+  }
+ }
+ icon-container {
+  display: flex;
+  flex-direction: column;
+        h3 {
+      color: ${({theme}) => theme.primary1};
+       font-family: inherit;
+       text-align: center;
+      }
+      }
+ }
+
+  }
+
 `
 
 export const ImageCon = styled.div`

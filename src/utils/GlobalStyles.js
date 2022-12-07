@@ -7,9 +7,9 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    background: ${({theme})  => theme.bg2};
-    color: ${(theme) => theme.text};
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .6px;
+    background-color: ${({theme}) => theme.text};
+     color: ${(theme) => theme.text};
+     font-family: 'Roboto', sans-serif;
+      letter-spacing: .6px;
 }
 `
