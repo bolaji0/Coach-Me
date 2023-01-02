@@ -4,7 +4,12 @@ import {Link} from 'react-router-dom'
 export const Wrapper = styled.div`
 width: 100%;
 height: auto;
-background-color: ${({theme}) => theme.text};
+/* background-color: ${({theme}) => theme.text}; */
+background: rgba(26, 25, 25, 0.9);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.8px);
+-webkit-backdrop-filter: blur(2.8px);
+border: 1px solid rgba(26, 25, 25, 0.23);
 display: flex;
 flex-direction: column;
 padding: 20px;
@@ -13,7 +18,7 @@ padding: 20px;
 export const Main = styled.div`
 width: 100%;
 height: auto;
-background-color: ${({theme}) => theme.text};
+/* background-color: ${({theme}) => theme.text}; */
 display: flex;
 @media screen and (max-width: 960px) {
   display: flex;
@@ -27,7 +32,7 @@ display: flex;
 export const Main1 = styled.div`
 width: 100%;
 height: auto;
-background-color: ${({theme}) => theme.text};
+/* background-color: ${({theme}) => theme.text}; */
 display: flex;
 
 @media screen and (max-width:  960px) {
@@ -106,7 +111,7 @@ letter-spacing: 2px;
 export const Container1 = styled.div`
 width: 50%;
 height: 500px;
-background-color: black;
+background-color: whitesmoke;
 overflow: hidden;
 img {
   width: 100%;
@@ -129,7 +134,7 @@ display: flex;
 justify-content: space-between;
 flex-direction: column;
 align-items: center;
-background-color: ${({theme}) => theme.text};
+/* background-color: ${({theme}) => theme.text}; */
 
 .text-holder h1 {
   text-align: start;
@@ -182,7 +187,7 @@ overflow: hidden;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: ${({theme}) => theme.text};
+/* background-color: ${({theme}) => theme.text}; */
 .course-holder {
   width: 70%;
   /* border: 1px solid red; */
@@ -301,7 +306,7 @@ align-items: center;
 /* justify-content: space-between; */
 height: 500px;
 width: 100%;
-background-color: ${({theme}) => theme.text};
+/* background-color: ${({theme}) => theme.text}; */
 @media screen and (max-width: 960px){
   width: 100%;
   height: auto;
@@ -406,8 +411,7 @@ export const Footer = styled.div`
 /* © Copyright 2022 affilBase. All rights reserved. */
 height: 100px;
 width: 100%;
-background-color: ${({theme}) => theme.text};
-  
+/* background-color: ${({theme}) => theme.text}; */
   .container {
     display: flex;
     height: 100%;

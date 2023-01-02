@@ -7,6 +7,7 @@ import Patners from '../routes/patners/patners.routes'
 import Faqs from '../routes/Faqs/faq.routes'
 import Pricing from '../routes/Pricing/pricing.routes'
 import Signin from '../routes/Sigin/signin.routes'
+import Signup from '../Signup/signup.routes'
 
 const MainRoute = () => {
   return (
@@ -18,7 +19,8 @@ const MainRoute = () => {
     <Route path='/faqs' element={<Faqs />}/>
     <Route path='/pricing' element={<Pricing />} />
     </Route>
-    <Route path='create-account' element={<Signin />}/>
+    <Route path='/create-account' element={<Signin />}/>
+    <Route  path='/create-account/signup' element={<Signup />}/>
  </Routes>
   )
 }

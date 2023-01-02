@@ -1,16 +1,16 @@
 import React from "react";
-import logo from "../../../assests/images/CoachMe logo.png";
+import logo from "../../assests/images/CoachMe logo.png";
 import {
   AiOutlineMail,
   AiOutlineEyeInvisible,
   AiOutlineEye,
   AiOutlineLogin
 } from "react-icons/ai";
-import { Main } from "./sign.styles";
+import { Main } from "./signup.styles";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Signin = () => {
+const Signup = () => {
   const [visible, setVisible] = useState(false);
   
  const handleVisible = () => {
@@ -25,7 +25,7 @@ const Signin = () => {
     <Main>
       <div className="input-holder">
       <img src={logo} alt="logo" style={{height: '100px'}} />
-        <h2>login into your account</h2>
+        <h2>signup to have an account</h2>
         <div className="form-holder">
           <form>
             <div className="input">
@@ -33,6 +33,9 @@ const Signin = () => {
               <div className="input-icon">
                 <AiOutlineMail size={"1.5rem"} color="black" />
               </div>
+            </div>
+            <div className="input">
+              <input type={"text"} placeholder="name"/>
             </div>
             <div className="input">
               <input type={visible ? "text" : "password"} placeholder="password"/>
@@ -45,7 +48,7 @@ const Signin = () => {
               </div>
             </div>
             <div className="button">
-              <input type={"submit"} value="login"/>
+              <input type={"submit"} value="signup"/>
               <div className="input-icon">
                 <AiOutlineLogin size={"1.5rem"} color="black" />
               </div>
@@ -53,7 +56,7 @@ const Signin = () => {
           </form>
         </div>
         <div className="text-container">
-       <p>Don't have an account?<Link to={'/create-account/signup'}>Sign Up</Link></p>
+       <p>already have an account?<Link to={'/create-account'}>login</Link></p>
       </div>
       </div>
       <div className="image-holder">
@@ -71,4 +74,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signup;

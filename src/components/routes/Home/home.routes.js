@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { ButtonContainer, Container, Container1, Container2, Container3, Container4, Container5, Footer, Main, Main1, Main3, NavLink, Wrapper,ImageCon } from './home.styles'
-import map from '../../../assests/images/map1.jpg'
 import logo from '../../../assests/images/CoachMe logo.png'
 import { AiFillFacebook, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
-// import { ImageCon } from '../../navigation/navigation.styles'
 
 const Home = () => {
     useEffect(() =>{
@@ -35,7 +33,7 @@ const Home = () => {
     </Container>
 
     <Container1>
-     <img src={map} alt='map'/>
+     {/* <img src={map} alt='map'/> */}
     </Container1>
     </Main>
     
